@@ -1,63 +1,63 @@
 
-public class Student {
+public class Student implements Cloneable {
     private String name;
     private String Seatnumber;
-    
-    //  CONSTRUCTOR
-    
-    public Student(){
-        name="Ahsan";
-        Seatnumber="B24110006082";
-    }
-    
-    public Student(String name,String Seatnumber){
-        this.name=name;
-        this.Seatnumber=Seatnumber;
+
+    // CONSTRUCTOR
+
+    public Student() {
+        name = "Muhammad Ahsan";
+        Seatnumber = "B24110006082";
     }
 
-    public Student(Student other){
-        this.name=other.name;
-        this.Seatnumber=other.Seatnumber;
-    }
-    
-    //  SETTER
-
-    public void setStudent(String name,String Seatnumber){
-        this.name=name;
-        this.Seatnumber=Seatnumber;
+    public Student(String name, String Seatnumber) {
+        this.name = name;
+        this.Seatnumber = Seatnumber;
     }
 
-    //  GETTER
-    
-    public String getName(){
+    public Student(Student other) {
+        this.name = other.name;
+        this.Seatnumber = other.Seatnumber;
+    }
+
+    // SETTER
+
+    public void setStudent(String name, String Seatnumber) {
+        this.name = name;
+        this.Seatnumber = Seatnumber;
+    }
+
+    // GETTER
+
+    public String getName() {
         return name;
     }
-      
-    public String getSeatnumber(){
+
+    public String getSeatnumber() {
         return Seatnumber;
     }
-  
+
     // COMPARE METHOD FOR SORTING PURPOSE
-    public int compareToName(Student other){
-       return this.name.compareTo(other.name);
+    public int compareToName(Student other) {
+        return this.name.compareTo(other.name);
     }
 
-    public int compareToSeatNumber(Student other){
-       return this.Seatnumber.compareTo(other.Seatnumber);
+    public int compareToSeatNumber(Student other) {
+        return this.Seatnumber.compareTo(other.Seatnumber);
     }
-    
-    // CLONED METHOD 
+
+    // CLONED METHOD
     @Override
     public Object clone() throws CloneNotSupportedException {
-        
+
         return super.clone();
     }
-    
+
     // TO PRINT
     @Override
     public String toString() {
-        
-        return "Name = "+name+"Seat number = "+Seatnumber  ;
+
+        return "Name = " + name + "Seat number = " + Seatnumber;
     }
 
 }
