@@ -147,7 +147,7 @@ public class Studentlist implements Cloneable {
   }
 
   // ADDSTUDENT STUDENT ANOTHER METHOD FOR THOSE WHO COME AT MID OF YEAR
-  public boolean Parchi(int indx, Student other) {
+  public boolean Addstudent(int indx, Student other) {
     if ((indx < 0) || (indx > size)) {
       System.out.println("indx is invalid");
       return false;

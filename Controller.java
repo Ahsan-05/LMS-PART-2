@@ -62,7 +62,7 @@ public class Controller {
         System.out.println(dcs);
 
         // CALLING ADDSTUDENT METHOD
-        if (dcs.Parchi(1, s3)) {
+        if (dcs.Addstudent(1, s3)) {
             System.out.println("STUDENT ENROLL");
         }
 
